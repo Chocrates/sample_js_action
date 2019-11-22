@@ -7,7 +7,7 @@ async function run() {
   try { 
     const ms = core.getInput('milliseconds');
     console.log(`Waiting ${ms} milliseconds ...`)
-      console.log('Test output to validate that this is the correct script getting picked up')
+    console.log('Test output to validate that this is the correct script getting picked up')
     core.debug((new Date()).toTimeString())
     wait(parseInt(ms));
     core.debug((new Date()).toTimeString())

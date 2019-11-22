@@ -66,3 +66,6 @@ typings/
 
 # Flymd rendering
 flymd.*
+
+# Emacs temp files i guess?
+.#*
