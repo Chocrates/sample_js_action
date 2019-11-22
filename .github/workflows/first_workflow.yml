@@ -18,3 +18,5 @@ jobs:
       - uses: ./.github/actions/first_action
         with:
           amazing-creature: Octocat
+        id: debug
+      - run: echo There was an amazing message - ${{ steps.debug.outputs.amazing-message }}
