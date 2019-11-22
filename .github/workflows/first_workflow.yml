@@ -15,4 +15,4 @@ jobs:
       - run: npm install
       - run: npm build
       - run: npm run test
-      - uses: ./.github/actions/first_action
+      - uses: ./.github/actions/first_action/first_action.yml
