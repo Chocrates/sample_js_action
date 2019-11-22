@@ -7,4 +7,4 @@ inputs:
     default: person
 runs:
   using: 'node12'
-  main: './debug.js'
+  main: 'first.js'
