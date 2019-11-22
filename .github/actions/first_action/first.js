@@ -2,7 +2,9 @@ const core = require('@actions/core')
 
 run = async () => {
     const creature = core.getInput('amazing-creature')
-    core.debug(`Hello!  You are amazing ${creature}`)
+    core.debug(`Hello! You are an amazing ${creature}!`)
 }
 
 run()
+
+module.exports = { run }
