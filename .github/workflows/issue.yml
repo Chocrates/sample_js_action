@@ -3,14 +3,14 @@ on:
   issues:
     types: [opened]
 jobs:
-  applyTriageLabel:
-    name: Apply Triage Label
+  callIssueAction:
+    name: CallIssueAction
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Apply Triage Label
-        uses: actions/github@v1.0.0
+        with:
+          fetch-depth: 1
+      - name: Calling my custom action that uses octokit
+        uses: ./.github/actions/issue_action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: label triage
