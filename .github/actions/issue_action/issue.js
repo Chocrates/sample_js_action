@@ -15,7 +15,14 @@ run = async () => {
             return
         }
 
-        await octokit.issues.createComment({issue_number: issue.number, content: 'test'})
+        // Getting the owner ane repo
+        const [owner,repo] = process.env['GITHUB_REPOSITORY'].split('/')
+        core.debug(`Owner: ${owner}, Repo: ${repo}`)
+        await octokit.issues.createComment({
+            repo: repo,
+            owner: owner,
+            issue_number: issue.number,
+            content: 'test'})
 
         core.debug('did we say something?')
 
