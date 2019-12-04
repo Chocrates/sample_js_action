@@ -5,7 +5,7 @@ run = async () => {
         const creature = core.getInput('amazing-creature')
 
         if(creature === 'mosquito') {
-            core.setFailed('Sorry, mosquitos are not amazing')
+            core.debug('Sorry, mosquitos are not amazing')
             return
 
             core.debug('test')
