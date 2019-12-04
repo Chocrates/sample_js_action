@@ -3,4 +3,4 @@ description: 'Outputs issue payload info'
 author: '@chocrates'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'issue.js'
