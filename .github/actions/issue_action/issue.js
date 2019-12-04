@@ -22,7 +22,7 @@ run = async () => {
             repo: repo,
             owner: owner,
             issue_number: issue.number,
-            content: 'test'})
+            body: 'test'})
 
         core.debug('did we say something?')
 
