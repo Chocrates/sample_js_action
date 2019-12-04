@@ -20,7 +20,7 @@ run = async () => {
         core.debug('did we say something?')
 
     } catch (error) {
-        core.setFailed('Issue-action failure: ${error}')
+        core.setFailed(`Issue-action failure: ${error}`)
     }
 }
 
