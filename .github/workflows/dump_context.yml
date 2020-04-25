@@ -1,7 +1,7 @@
 name: Test Workflow to dump run contexts
 on:
   issues:
-    types: [labeled,created,opened,reopened,closed]
+    types: [labeled,opened,reopened,closed]
   issue_comment:
     types: [created]
 jobs:
