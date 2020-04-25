@@ -2,8 +2,8 @@ name: Test Workflow to dump run contexts
 on:
   issues:
     types: [labeled,created,opened,reopened,closed]
-  issue_comment
-
+  issue_comment:
+    types: [created]
 jobs:
   one:
     runs-on:  ubuntu-latest
