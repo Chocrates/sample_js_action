@@ -32,4 +32,3 @@ jobs:
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT" 
-© 2020 GitHub, Inc.
